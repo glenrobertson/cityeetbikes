@@ -70,7 +70,7 @@ CITYBIKES_ATTRIBUTION = (
     "Information provided by the CityBikes Project (https://citybik.es/#about)"
 )
 
-CITYBIKES_NETWORKS = "citybikes_networks"
+CITYBIKES_NETWORKS = "cityeetbikes_networks"
 
 PLATFORM_SCHEMA = vol.All(
     cv.has_at_least_one_key(CONF_RADIUS, CONF_STATIONS_LIST),
@@ -206,9 +206,9 @@ async def async_setup_platform(
 
         if radius > dist or stations_list.intersection((station_id, station_uid)):
             if name:
-                uid = "_".join(["cityeet", network.network_id, name, station_id])
+                uid = "_".join([network.network_id, name, station_id])
             else:
-                uid = "_".join(["cityeet", network.network_id, station_id])
+                uid = "_".join([network.network_id, station_id])
             entity_id = async_generate_entity_id(ENTITY_ID_FORMAT, uid, hass=hass)
             devices.append(CityBikesStation(network, station_id, entity_id))
 
