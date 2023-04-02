@@ -25,5 +25,4 @@ sensor:
 ### Output
 The additional ebike property on the sensor is shown below
 
-|-|
-|[screenshot](/docs/stagg-and-union-citibike-sensor.png)|
+<img src="https://github.com/glenrobertson/cityeetbikes/blob/main/docs/stagg-and-union-nyc-citibike-sensor.png?raw=true" />
