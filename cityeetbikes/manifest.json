@@ -1,0 +1,7 @@
+{
+  "domain": "cityeetbikes",
+  "name": "CityeetBikes",
+  "codeowners": ["glenrobertson"],
+  "documentation": "https://github.com/glenrobertson/cityeetbikes",
+  "iot_class": "cloud_polling"
+}
