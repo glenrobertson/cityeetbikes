@@ -10,12 +10,20 @@ Fork of [homeassistant/core -> /homeassistant/components/citybikes](https://gith
 * Category: Integration
 * Restart Home Assistant, then add [sensor config](https://www.home-assistant.io/integrations/citybikes/) to home assistant configuration.yaml, except replace platform "citybikes" with "cityeetbikes", example below
 
-## Example configuration
+## Example
+
+### Configuration
 
 ```yaml
 sensor:
   - platform: cityeetbikes
     name: Home Stations
     stations:
-       - 66dce567-0aca-11e7-82f6-3863bb44ef7c # UID for Citibike 'McKibbin St & Manhattan Ave' station
+       - 66dcecfa-0aca-11e7-82f6-3863bb44ef7c # UID for NYC Citibike 'Stagg St & Union Ave' station
 ```
+
+### Output
+The additional ebike property on the sensor is shown below
+
+|-|
+|[screenshot](/docs/stagg-and-union-citibike-sensor.png)|
